@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" aria-live="polite">
+        <div class="loader-ring"></div>
+        <p class="loading-text"><span id="loading-text"></span></p>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container" style="display:none;">
+        <header>
+            <img src="https://i.postimg.cc/v8JwL7BP/edith1.jpg" alt="Bot Logo" class="bot-logo" />
+            <h1>JARVIS</h1>
+        </header>
+
+        <div class="chat-box" id="chat-box">
+            <div id="typing" class="typing hidden" aria-live="polite" role="status">
+  <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+</div>
+
+            <div class="message bot-message">
+                <span>Hello sir... <br>how can i help you </span></span>
+            </div>
+        </div>
+
+        <div class="input-area">
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <input type="file" id="file-input" accept="image/*" hidden />
+    <div class="fab-container">
+  <button id="main-fab">➕</button>
+  <div class="fab-options">
+    <button id="upload-btn" title="Upload photo">🖼️</button>
+    <button id="speak-btn" title="Read bot reply">🔊</button>
+    <button id="voice-btn" title="Talk to bot">🎤</button>
+  </div>
+</div>
+
+    <button id="send-btn">Send</button>
+</div>
+        </div>
+    </div>
+<!-- Bot Info Button -->
+<button id="botInfoBtn" class="info-btn">ℹ️ About Bot</button>
+
+<!-- Modal for Bot Information -->
+<div id="botInfoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2> 🤖 Chatbot: JARVIS (Just A Rather Very Intelligent System) </h2>
+    <p><j>
+      JARVIS is your personal AI assistant 
+      It can chat with you, answer questions, process images, and soon 
+      will also support voice input/output like a futuristic assistant.  
+      The bot is built using HTML, CSS, JavaScript, and AI APIs to 
+      provide smooth and intelligent conversations.  
+    </j></p>
+  </div>
+</div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
